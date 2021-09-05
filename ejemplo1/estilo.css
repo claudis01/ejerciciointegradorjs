@@ -1,0 +1,49 @@
+
+
+div ol li{
+    display: inline-block;
+    justify-content: center;
+  
+    
+    }
+
+.uno {
+    color: yellow;
+    width: 15%;
+    height: 250px;
+    font-size: 25px;
+    background-color: red;
+    margin:5px
+   
+}
+
+.dos {
+    color: white;
+    background-color: black;
+    width: 15%;
+    height: 250px;
+    font-size: 25px;
+    margin:5px
+}
+
+.tres {
+    color: yellow;
+    background-color: red;
+    width: 15%;
+    height: 250px;
+    font-size: 25px;
+    margin:5px
+}
+
+.cuatro {
+    color: yellow;
+    background-color: red;
+    width: 15%;
+    height: 250px;
+    font-size: 25px;
+    margin:5px
+}
+
+
+
+
