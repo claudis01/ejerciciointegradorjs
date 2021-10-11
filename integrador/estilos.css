@@ -1,0 +1,58 @@
+
+h3,h2{
+    text-align: center;
+    
+}
+h3{
+    color:dimgrey;
+}
+
+#boton{
+    color: white;
+    background-color: yellowgreen;
+    width: 1300px;
+    
+}
+
+
+#conoce{
+    text-align: center;
+}
+#oradores{
+    text-align: center;
+}
+
+#codo{
+    height: 100px;
+    width: 100px;
+
+}
+
+#gris{
+    background-color: #44444b;
+}
+
+   
+footer{
+    background-color: rgb(4, 31, 41);
+    color: white;
+    
+}
+
+#conf{
+    text-align-last: right;
+    margin-top: 20%;
+    margin-left: 60%;
+    font-size:  30px;
+
+}
+#derecha{
+    text-align-last: right;
+  
+}
+
+
+
+
+
+
