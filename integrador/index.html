@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="./estilos.css">
 </head>
 <body>
-    <section>
-        <article>
+
+  
         <nav>
           <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #44444b;">
             <div class="container-fluid">
@@ -35,30 +35,26 @@
           </li>
        
          <li class="nav-item">
-            <a class="nav-link text-success" href="#">Comprar tickets</a>
+            <a class="nav-link text-success" onclick="comprarTicket()" href="#">Comprar tickets</a>
           </li>
+          
       </ul>
-      
-    </nav>
-</section>
-</article>
-<section>
-    <article>
+    </div>
+      </nav>
+    
+    <section id="seccion">
+
         <div class="card bg-dark text-white card text-end" id="fondo">
             <img src="../integrador/img/ba1.jpg" class="card-img" alt="imagenba">
             <div class="card-img-overlay">
               <h5 class="card-title" id="conf"><strong>Conf Bs As</strong></h5>
               <p class="card-text" id="derecha"><strong>Bs As llega por primera vez a la Argentina.Un evento para compartir con <br> nuestra comunidad el conocimiento y expeniencia de los expertos que <br> están creando el futuro de internet. Ven a conocer a miembros del <br> evento, a otros estuidiantes de Codo a Codo y los oradores de primer <br> nivel que tenemos para ti. Te esperamos!</strong></p>
               <a href="#" class="btn border-light text-white">Quiero ser orador</a>
-              <a href="#" class="btn bg-success text-white">Comprar Tickets</a>
+              <a href="#" class="btn bg-success text-white" onclick="comprarTicket()">Comprar Tickets</a>
             
             </div>
           </div>
-          </article>
-    </section>
-    </article>
-    <section>
-        <article>
+     
           <div class="nav">
             <div class="container">
             <div class="row text-center">
@@ -66,8 +62,8 @@
                 <h4><strong>ORADORES</strong></h4>
             </div>
             </div>
-        </section>
-      </article>
+          </div>
+      
       <div class="container">
          <div class="row row-cols-1 row-cols-md-3 g-4">
   <div class="col" id="steve">
@@ -114,10 +110,7 @@
   </div>
 </div>
       
-        </article>
-      </section>
-    <article>
-        <section>
+      
           <div class="card mb-3" style="max-width: 1500px">
           <div class="row g-0">
               <div class="col-md-6">
@@ -134,14 +127,11 @@
             </div>
           </div>
 
-        </section>
-        </article>
-        <article>
-          <section>
+       
             <nav>
 
             <div class="row">
-          
+              <div class="col-md-8" text="center">
               <h3>CONVIERTETE EN UN </h3>
               <h2>ORADOR </h2>
               <h2>Anótate como orador para dar una <abbr title="Hyper Text Markup Language">charla.ignite</abbr>. Cuéntanos de que quieres hablar!</h2>
@@ -159,7 +149,7 @@
               <nav>
               
                 <div class="row">
-          <div class="col-md-12">
+          <div class="col-md-8">
           <div class="form-floating">
            
             <textarea class="form-control" id="pad" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
@@ -170,20 +160,20 @@
           </div>
       
             <div class="row">
-             <div class="d-grid gap-2">
+              <div class="d-grid gap-2">
                 <button class="btn" id="boton" type="button">Enviar</button>
+                
+              </div>
+           </div>
+          </div>
         </div>
-  </div>
-       </div>
-  </div>
-</nav><br>
-      </section>
-    </article>
-  <article>
-    <section>
+        </nav><br>
 
+
+
+  </section>
         <footer>
-            <div class="container">
+            <div class= "container" >
             <div class="row">
             <div class= "col"> 
         <p>Preguntas <br> Frecuentes</p>
@@ -210,8 +200,21 @@
   </div>
 </div>
 </footer>
-</section>
-</article>
 
-    
+
+<script src="./js/app.js"></script>
+<script>
+  function imprimirValor(val) {
+  
+      cantidad = document.getElementById("cantidadEntradas").value; 
+      categoria_descuento = document.getElementById("id_categoria").value; 
+      
+      total = (cantidad * 200);
+      descuento = ((total *  categoria_descuento) / 100);
+      total_final = total - descuento
+      document.querySelector('#label_cant_pagar').innerText = 'Cantidad a Pagar: $' + total_final;
+
+  }
+  </script>
 </body>
+</html>
