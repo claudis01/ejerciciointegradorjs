@@ -1,6 +1,6 @@
 let container = document.getElementById("seccion");
 
-const comprarTicket =()=>{
+const comprarTickets =()=>{
     container.innerHTML=`
     <div class="container">
         
